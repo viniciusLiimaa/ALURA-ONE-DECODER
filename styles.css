@@ -53,6 +53,11 @@ main {
   outline: none;
 }
 
+#crypt-buttons-container {
+  display: flex;
+}
+
+
 button {
   display: flex;
   flex-direction: column;
@@ -63,10 +68,19 @@ button {
   border-radius: 1rem;
   padding: 0.8rem;
   box-shadow: 1px 3px 8px 0px rgba(0,0,0,0.39);
+  margin: 1rem;
 }
 
 button:hover {
-  transform: scale(0.8);
+  transform: scale(0.9);
+  transition-duration: 0.6s;
+  background-color: #66ff66;
+}
+
+button:active {
+  background-color: #66ff66;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
   transition-duration: 0.6s;
 }
 
